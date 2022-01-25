@@ -1,64 +1,75 @@
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
-/*Reset CSS*/
+
 *{
     margin: 0px;
     padding: 0px;
     font-family: Avenir, sans-serif;
 }
-.logo{
-    margin-top: -2%;
-    margin-left: -20%;
-    margin-right: 10%;
-}
-.login{
-    display: flex;
-    width: 100%;
-}
+
+
 nav{
     display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    padding-top: 2%;
-    background-color: whitesmoke;
+    flex-flow: column wrap;
+    width: 90%;
+    height: 70px;
+    background-color: #0d2640;
+    padding-left: 10%;
     position: sticky;
-    justify-content: center;
     top: 0px;
-    
-    
+}
+.nav-header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 1% 1% 0% 1%;
+    border-bottom: rgba(121, 113, 113, 0.295) 0.1px solid;
+}
+.nav-left{
+    color: white;
+    display: flex;
+}
+.menu-options{
+    margin-left: -15%;
+    width: 42%;
+    background-color: #0d2640;
+    height: 55px;
 }
 
-nav ul{
+.menu-options ul{
     list-style-type: none;
+    padding-left: 40%;
 }
 
-nav ul li{
+.menu-options ul li{
     float: left;
-    width: 25%;
     text-align: center;
     position: relative;
     align-content: center;
+    margin-left: 7%;
+    border-bottom: 1px solid #ffffff;
 }
 
-nav ul::after{
+.menu-options ul::after{
     content: "";
     display: table;
     clear: both;
 }
 
-nav a{
+.menu-options a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     border-bottom: 2px solid transparent;
-    padding: 10px 0px;
+    padding-top: 2px;
 }
 
-nav a:hover{
-    color: orange;
-    border-bottom: 2px solid gold;
+.menu-options a:hover{
+    color: #01aff4;
+    border-bottom: 4px solid #01aff4;
+    width: 100%;
 }
 
 .sous{
@@ -69,7 +80,7 @@ nav a:hover{
     width: 200%;
     z-index: 1000;
 }
-nav > ul li:hover .sous{
+.menu-options > ul li:hover .sous{
     display: block;
 }
 .sous li{
@@ -80,19 +91,26 @@ nav > ul li:hover .sous{
 .sous a{
     padding: 10px;
     border-bottom: none;
+    color: #184979;
 }
 .sous a:hover{
     border-bottom: none;
-    background-color: RGBa(200,200,200,0.1);
+    background-color: rgba(200, 200, 200, 0.308);
+    width: 85%;
 }
 .deroulant > a::after{
     font-size: 12px;
 }
 
 .conteneur{
-  margin: 50px 20px;
-  height: 1500px;
+    background-color: whitesmoke;
+    box-shadow:0px 15px 10px -5px #777;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10% 10% 10%;
+    height: 1500px;
 }
+
 
 
 
@@ -106,48 +124,135 @@ nav > ul li:hover .sous{
 .header{
     display: flex;
     flex-direction: column;
-    align-items: center;
     box-shadow: 0px 15px 10px -5px #777;
-    margin-top: -1%;
-    animation: fondu 5s ease-in-out infinite both ;
+    background-color:#0d2640;
     background-size: cover;
-    height: 400px;
+    height: 300px;
+    padding-top: 3%;
     background-repeat: no-repeat;
     width: 100%;
 }
 .header_font{
     background-color: rgba(0, 0, 0, 0.616);
     height: 300px;
+    width: 90%;
     color: white;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10%;
 }
-.header h1{
-    padding-top: 6%;
+.header-frm-question{
+    background-color:#0d2640;
+    border-radius: 5px;
+    display: flex;
+    width: 80%;
+    margin: 2%;
+    flex-flow: wrap-reverse wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 5px 10px -5px rgba(119, 119, 119, 0.651);
+}
+.header-frm-question input{
+    width: 30%;
+    border-radius: 7px;
+    border: none;
+    height: 20px;
+    font-size: 13px;
+    padding: 1% ;
+    margin: 3px;
+}
+select{
+    width: 190px;
+    border-radius: 7px;
+    border: none;
+    height: 20px;
+    font-size: 13px;
+    padding: 1% ;
+    margin-top: 2%;
+    color: black;
+}
+h4{
+    color: rgb(7, 147, 182);
+    margin-left: 1%;
+}
+ h1{
     font-size: 30px;
     margin: 1%;  
     color: white;
-    text-align: center;
+}
+
+.h2-rechercher{
+    text-align: left;
 }
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-button{
-    margin-top: 5%;
-    background-color: #1D3D21;
+.btn-search{
+    background-color: #0d2640;
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 12px;
-    height: 60px;
-    width: 200px;
-    cursor: cell;
+    border-radius: 1px;
+    height: 40px;
+    width: 20%;
+   
+}
+.btn-log-in-out {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    height: 30px;
+    width: 100px;
+}
+.btn-ajouter-entabliss {
+    background-color: #ffffff00;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    height: 30px;
+    border: rgb(255, 255, 255) 2px solid;
+}
+.btn-devise {
+    background-color: #ffffff00;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    height: 30px;
+}
+.btn-langue {
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    background-image: url("../images/icon/france_48px.png");
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-position: center;
+    background-clip: content-box;
+}
+.btn-more {
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: white 2px solid;
+    font-size: 15px;
 }
 @keyframes fondu{
     0%{background-image: url(../images/bg/bg_header3.jpg);}
     33.33%{background-image: url(../images/bg/bg_header2.jpg);}
     66.67%{background-image: url(../images/bg/bg_header2.jpg);}
     100%{background-image: url(../images/bg/bg_header1.jpg);}
+}
+
+
+footer{
+    padding: 5%;
+    color: white;
+    background-color: #0d2640;
+    height: 300px;
 }
 
 

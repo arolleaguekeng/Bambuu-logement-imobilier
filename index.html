@@ -5,56 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="view/css/style.css">
+    <link rel="stylesheet" href="view/css/style-animations.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <h1>SIte de Vente, location,et achat de lodement immobilier</h1>
-        <button>S'inscrire</button>
-    </div>
     <nav>
-        <div class="logo">
-            <img src="view/images/logo/logo.png" alt="" height="60" width="60">
-        </div>
-      <ul>
-        <li class="deroulant"><a href="#">Acheter &ensp;</a>
-          <ul class="sous">
-            <li><a href="#">Maison</a></li>
-            <li><a href="#">Terrain</a></li>
-            <li><a href="#">Appartement</a></li>
-          </ul>
-        </li>
-        <li class="deroulant"><a href="#">Articles &ensp;</a>
-          <ul class="sous">
-            <li><a href="#">CSS display</a></li>
-            <li><a href="#">CSS position</a></li>
-            <li><a href="#">CSS float</a></li>
-          </ul>
-        </li>
-        <li class="deroulant"><a href="#">Articles &ensp;</a>
-            <ul class="sous">
-              <li><a href="#">CSS display</a></li>
-              <li><a href="#">CSS position</a></li>
-              <li><a href="#">CSS float</a></li>
-            </ul>
-          </li> 
-          <li class="deroulant"><a href="#">Articles &ensp;</a>
-            <ul class="sous">
-              <li><a href="#">CSS display</a></li>
-              <li><a href="#">CSS position</a></li>
-              <li><a href="#">CSS float</a></li>
-            </ul>
-          </li>
 
-      </ul>
-
+        <div class="nav-header">
+            <div class="nav-left">
+                <img src="view/images/logo/logo.png" alt="" height="50" width="50">
+                <h1 class="h1-title"> Bambuu.com</h1>
+            </div>
+            <div class="menu-options">
         
+                <ul>
+                    <li class="deroulant"><a href="#">Acheter</a>
+                      <ul class="sous">
+                        <li><a href="#">Acheter</a></li>
+                        <li><a href="#">Louer</a></li>
+                        <li><a href="#">Vendre</a></li>
+                      </ul>
+                    </li>
+                    <li class="deroulant"><a href="#">Louer</a>
+                      <ul class="sous">
+                        <li><a href="#">Acheter</a></li>
+                        <li><a href="#">Louer</a></li>
+                        <li><a href="#">Vendre</a></li>
+                      </ul>
+                    </li>
+                    <li class="deroulant"><a href="#">Vendre</a>
+                        <ul class="sous">
+                            <li><a href="#">Acheter</a></li>
+                            <li><a href="#">Louer</a></li>
+                            <li><a href="#">Vendre</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="btn-devise">XAF</button>
+                <button class="btn-langue">.</button>
+                <button class="btn-more">?</button>
+                <button class="btn-log-in-out">S'incrire</button>
+                <button class="btn-log-in-out">Se connecter</button>
+            </div>
+        </div>
+
 
     </nav>
-    
+
+    <div class="header">
+        <div class="header_font">
+            <h1>Trouvez une maison, un appartement ou des bureaux facilement</h1>
+            <h4>Que voulez vous ?</h4>
+
+            <div class="header-frm-question">
+                
+                <select name="" id="">
+                    <option>Appartement</option>
+                    <option>Maison</option>
+                    <option>Boutique</option>
+                </select>
+                   <input type="text" placeholder="Choisir une ville">
+           
+                   <input type="datetime-local" name="" id=""placeholder="dsfsdfsdf">
+                   <input type="datetime-local" name="" id="">
+                   <button class="btn-search">Rechercher</button>
+            </div>
+        </div>
+        
+    </div>
     <div class="conteneur">
-      <p>Du contenu sous le menu</p>
+        <h2 class="h2-rechercher">
+            Rechercher par type d'ébergement
+        </h2>
+        <div class="frm-animation-defilement">
+            <figure class="animation-image">
+                <img src="view/images/bg/bg_header1.jpg" alt="sample70" />
+                <figcaption>
+                  <h3>En savoir plus</h3>
+                </figcaption>
+                Appartements
+                <a href="#"></a>
+              </figure>
+
+              <figure class="animation-image">
+                <img src="view/images/bg/bg_header1.jpg" alt="sample70" />
+                <figcaption>
+                  <h3>En savoir plus</h3>
+                </figcaption>
+                Appartements
+                <a href="#"></a>
+              </figure>
+              
+              <figure class="animation-image">
+                <img src="view/images/bg/bg_header1.jpg" alt="sample70" />
+                <figcaption>
+                  <h3>En savoir plus</h3>
+                </figcaption>
+                Appartements
+                <a href="#"></a>
+              </figure>
+
+              <figure class="animation-image">
+                <img src="view/images/bg/bg_header1.jpg" alt="sample70" />
+                <figcaption>
+                  <h3>En savoir plus</h3>
+                </figcaption>
+                Appartements
+                <a href="#"></a>
+              </figure>
+        </div>
+        
+    </div>
     </div> 
-    
+
+    <footer>
+        contact us
+    </footer>
 </body>
 </html>
