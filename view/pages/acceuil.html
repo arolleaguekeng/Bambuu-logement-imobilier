@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-acceuil.css">
+    <link rel="stylesheet" href="../css/style-animations.css">
+
+
+    <div class="container" id="container">
+        <div class="header">
+            <nav>
+
+                <div class="nav-right" id="nav-right">
+
+                    <img src="../images/logo/logo.png" alt="" height="50" width="50">
+                    <h3>BamBuu </h3>
+
+
+                </div>
+                <div class="nav-bar-center">
+                    
+                    
+                    <input type="search" name="" id="" placeholder="Rechercher">
+                    <button class="open-button">
+                        search
+                    </button>
+                    
+                    
+                </div>
+                <div class="droite">
+                    <p id="lb-visiteur">Visiteur</p>
+                    <button class="btn-current-user"></button>
+                    <button><img src="../images/icon/france_48px.png" alt="" height="30px" width="30"></button>
+                </div>
+
+
+            </nav>
+            <div class="nav-left">
+                <button class="lbutton" ><img src="../images/icon/single_bed_40px.png" alt=""></button>
+                <button class="lbutton"><img src="../images/icon/house_48px.png" alt=""  onclick="openForm('popup-Form')"></button>
+                <button class="lbutton"><img src="../images/icon/hotel_48px.png" alt=""></button>
+                <button class="lbutton"><img src="../images/icon/settings_48px.png" alt="" onclick="openForm('popup-definitionPrice')"></button>
+
+
+            </div>
+        </div>
+
+        <div class="menu-right">
+
+
+            <div class="menu-right-container"  id="menu-right-container">
+                <a href="#">
+                    <div class="menu-right-menu" >
+                        <img src="../images/bg/bg_header3.jpg" alt=""> 
+                        <h3>
+                            ⭐Duplex
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                             Voluptatem, expedita debitis? Tempora, consequatur ipsa. 
+                            </p>
+                    </div>
+
+                </a>
+
+            
+        </div>
+    </div>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-popup" id="popup-Form">
+        <form action="" method = "" class="frm-add-house">
+            <div class="popup-left">
+                <h1>Ajouter Appartement</h1>
+                <label>Entrer le prix</label>
+                <input type="text" name="txt-description" id="txt-description" placeholder="Entrer le prix">
+                <label>Entrer le prix</label>
+                <input type="text" name="txt-location" id="txt-location">
+                <label>Entrer le prix</label>
+                <input type="number" name="txt-room" id="txt-room">
+                <label>Entrer le prix</label>
+                <input type="number" name="xt-kitchen" id="txt-kitchen">
+                <label>Entrer le prix</label>
+                <input type="number" name="txt-shower" id="txt-shower">
+            </div>
+            <div class="popup-right">
+                <h1></h1>
+                <input type="number" name="txt-exibition" id="txt-exibition">
+                <label>Entrer le prix</label>
+                <input type="number" name="txt-level" id="txt-level">
+                <label>Entrer le prix</label>
+                <input type="number" name="txt-start" id="txt-start">
+                <input type="checkbox" name="cb-terrasse" id="cb-terrasse"> Terrasse
+                <input type="checkbox" name="cb-parking" id="cb-parking">Parking
+                <input type="checkbox" name="cb-used" id="cb-used"> Libre
+                <div class="popup-right-btns">
+                    <button id="btn-submit" onclick="AjouterLogement(); event.preventDefault(); " class="open-button"> Ajouter</button>
+                    <button class="btn-cancel" onclick="closeForm('popup-Form'); event.preventDefault();">retour</button>
+                </div>
+
+            </div>
+        </form>
+      </div>
+
+      <div class="form-popup" id="popup-definitionPrice">
+        <form action="" method = "" class="frm-add-house">
+            <div class="popup-left">
+
+
+                <h1>Definition des prix</h1>
+                <label>Exibition</label>
+                <input type="number" name="txt-description" id="txt-dExibition" placeholder="Entrer le prix">
+                <label>Kitchen</label>
+                <input type="text" name="txt-location" id="txt-dKitchen">
+                <label>Parking</label>
+                <input type="number" name="txt-room" id="txt-dParking">
+                <label>Room</label>
+                <input type="number" name="xt-kitchen" id="txt-dkitchen">
+                <label>Terrasse</label>
+                <input type="number" name="txt-shower" id="txt-dshower">
+            </div>
+            <div class="popup-right">
+                <h1></h1>
+                <div class="popup-right-btns">
+                    <button id="btn-submit" onclick=" ModifierPrixBasique(); event.preventDefault(); " class="open-button"> Ajouter</button>
+                    <button class="btn-cancel" onclick="closeForm(popup-definitionPrice); event.preventDefault();">retour</button>
+                </div>
+
+            </div>
+        </form>
+      </div>
+
+      <div class="form-popup" id="popup-showInfo-house">
+        <form action="" method = "" class="frm-add-house">
+            <div class="popup-left">
+
+                <h1>Definition des prix</h1>
+                <h3>Description : </h3>
+                <label for="">maison paradisiaque située en bord de mer</label>
+                <h3>Kitchen</h3>
+                <label>2</label>
+                <h3>Parking</h3>
+                <label for="">Oui</label>
+                <h3>Room</h3>
+                <label for="">3 chambres</label>
+                <h3>Terrasse</h3>
+                <label for="">oui</label>
+                <img src="../images/bg/bg_header3.jpg" alt="" height="250px" width="300px"> 
+            </div>
+            <div class="popup-right">
+                <h1></h1>
+                <div class="popup-right-btns">
+                    <button class="btn-cancel" onclick="closeForm(popup-definitionPrice); event.preventDefault();">retour</button>
+                </div>
+
+            </div>
+        </form>
+      </div>
+    <script src="../../Model/Logemet.js"></script>
+    <script src="../../controler/AjouterLogement.js"></script>
+</body>
+</html>

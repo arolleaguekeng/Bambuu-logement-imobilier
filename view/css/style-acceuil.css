@@ -1,0 +1,291 @@
+.popup-right-btns{
+  display: flex;
+}
+.popup-left{
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+}
+.popup-right{
+  width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+*{
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+  /* Fixer le bouton sur le côté gauche de la page */
+  .open-btn {
+    display: flex;
+    justify-content: flex-start;
+  }
+  /* Stylez et fixez le bouton sur la page */
+  .open-button {
+    background-color: #1c87c9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 5%;
+    opacity: 0.8;
+  }
+  .open-button :hover {
+    opacity: 1;
+  }
+  .btn-cancel{
+    background-color: #790909;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-top: 5%;
+    opacity: 0.8;
+  }
+  /* Positionnez la forme Popup */
+  /* Masquez la forme Popup */
+  .form-popup {
+    display: none;
+
+    position: fixed;
+    height: 100%;
+    border: none;
+   background-color: rgba(255, 255, 255, 0.925);
+    z-index: 9;
+    margin-left: 15%;
+    margin-top: 6%;
+    width: 80%;
+  }
+
+  /* Largeur complète pour les champs de saisie */
+  .form-popup input[type="email"],
+  .form-popup input[type="number"],
+  .form-popup input[type="text"],
+   input[type="search"]{
+    width: 80%;
+    padding-top: 1%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+    
+  }
+  /*Quand les entrées sont concentrées, faites quelque chose */
+  .form-container input[type="text"]:focus,
+  .form-container input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  /* Stylez le bouton de connexion*/
+  .form-container .btn {
+    background-color: #8ebf42;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  /* Stylez le bouton pour annuler */
+  .form-container .cancel {
+    background-color: #cc0000;
+  }
+  /* Planez les effets pour les boutons */
+  .form-container .btn:hover,
+  .open-button:hover,.btn-cancel:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+
+.frm-add-house{
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+  background: linear-gradient(180deg, #2775c31a,#6200f417);
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 5px 10px -5px rgba(119, 119, 119, 0.651);
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -1%;
+    padding-left: 10%;
+    margin-top: -1%;
+
+    
+}
+.droite{
+  display: flex;
+}
+.nav-right{
+    color: #0d2640;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 15px;
+
+}
+
+
+.nav-left{
+  display: flex;
+  position: fixed;
+  margin-top: 1%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  background-color: white;
+  margin-left: -1%;
+  align-items: center;
+
+  height: 100%;
+}
+.nav-right a{
+    display: block;
+    text-decoration: none;
+    color: #0d2640
+}
+
+.nav-right a:hover{
+    color: #6200f4be;
+}
+.nav-bar-center{
+  display:  flex;
+  flex-direction: row;
+}
+.menu-left{
+    display: flex;
+    height: 800px;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0px 5px 10px -5px rgba(119, 119, 119, 0.651);
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+.lbutton{
+    width: 50%;
+    border: none;
+    border-bottom: 1px rgba(128, 128, 128, 0.438) solid;
+    border-top: 1px rgba(128, 128, 128, 0.521) solid;
+    background-color: white;
+    height: 100px;
+}
+.lbutton:hover{
+  border-bottom: 1px rgb(0, 204, 255) solid;
+  border-top: 1px rgb(0, 204, 255) solid;
+  background-color: rgba(128, 128, 128, 0.123);
+  cursor: pointer;
+}
+.container{
+    display: flex;
+    
+}
+.menu-right{
+    margin-left: 15%;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.menu-right-menu{
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 10px -5px rgba(119, 119, 119, 0.651);
+    padding: 2%;
+
+}
+.menu-right-menu img{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    height: 200px;
+    width: 100%;
+}
+.menu-right-container{
+    
+    display: flex;
+    flex-flow: row wrap;
+}
+.menu-right-container a{
+    text-decoration: none;
+    color: #0d2640;
+    margin: 15px;
+}
+
+ p{
+    color: rgb(92, 92, 92);
+}
+label{
+  color: gray;
+  font-size: 12px;
+}
+
+.menu-right-menu p{
+    padding-left: 10%;
+    color: rgb(92, 92, 92);
+}
+.menu-right h3{
+    color: rgb(92, 92, 92);
+}
+.menu-right-menu :hover{
+    color: #6200f4be;
+}
+.btn-current-user{
+    border-radius: 30px;
+    border: none;
+    height: 60px;
+    width: 60px;
+    background-image: url('../images/icon/user_40px.png');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+nav button{
+    border-radius: 30px;
+    border: none;
+    height: 60px;
+    width: 60px;
+}
+
+
