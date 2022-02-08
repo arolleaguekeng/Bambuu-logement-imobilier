@@ -14,8 +14,10 @@
 
                 <div class="nav-right" id="nav-right">
 
-                    <img src="../images/logo/logo.png" alt="" height="50" width="50">
-                    <h3>BamBuu </h3>
+                    <a href="../../index.html">
+                        <img src="../images/logo/logo.png" alt="" height="50" width="50">
+                    </a>
+                    <h3>Bambuu</h3>
 
 
                 </div>
@@ -24,7 +26,7 @@
                     
                     <input type="search" name="" id="" placeholder="Rechercher">
                     <button class="open-button">
-                        search
+                        <img src="../images/icon/search_16px.png" alt="">
                     </button>
                     
                     
@@ -57,8 +59,7 @@
                         <h3>
                             ⭐Duplex
                         </h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                             Voluptatem, expedita debitis? Tempora, consequatur ipsa. 
+                        <p>Maison de luxe a Bertoua
                             </p>
                     </div>
 
@@ -75,24 +76,25 @@
         <form action="" method = "" class="frm-add-house">
             <div class="popup-left">
                 <h1>Ajouter Appartement</h1>
-                <label>Entrer le prix</label>
-                <input type="text" name="txt-description" id="txt-description" placeholder="Entrer le prix">
-                <label>Entrer le prix</label>
+                <label>Description</label>
+                <input type="text" name="txt-description" id="txt-description" placeholder="Entrer la description">
+                <label>Ville</label>
                 <input type="text" name="txt-location" id="txt-location">
-                <label>Entrer le prix</label>
+                <label> Nombre de chambre</label>
                 <input type="number" name="txt-room" id="txt-room">
-                <label>Entrer le prix</label>
-                <input type="number" name="xt-kitchen" id="txt-kitchen">
-                <label>Entrer le prix</label>
+                <label>Nombre de cuisine</label>
+                <input type="number" name="txt-kitchen" id="txt-kitchen">
+                <label>Nombre de toillettes</label>
                 <input type="number" name="txt-shower" id="txt-shower">
             </div>
             <div class="popup-right">
                 <h1></h1>
                 <input type="number" name="txt-exibition" id="txt-exibition">
-                <label>Entrer le prix</label>
+                <label>Numero Etage</label>
                 <input type="number" name="txt-level" id="txt-level">
-                <label>Entrer le prix</label>
+                <label>Nombre d'etoiles</label>
                 <input type="number" name="txt-start" id="txt-start">
+                <input type="file" name="" id="img-profile" multiple='multiple' onchange='AjouterLogement()'>
                 <input type="checkbox" name="cb-terrasse" id="cb-terrasse"> Terrasse
                 <input type="checkbox" name="cb-parking" id="cb-parking">Parking
                 <input type="checkbox" name="cb-used" id="cb-used"> Libre

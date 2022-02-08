@@ -5,7 +5,7 @@ function AjouterLogement(){
     let pictures = "sfdfsd";
     let client = "new User()";
     let logement = new Logement(description,location,room,kitchen,shower,exibition,terrasse,parking,used,level,pictures,client);
- 
+    let img = document.getElementById('img-profile');
     //creer des elements html 
     let infoHouse = document.createElement('a');
     infoHouse.id = '1';
